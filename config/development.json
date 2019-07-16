@@ -1,0 +1,8 @@
+{
+  "mode": "development",
+  "log": {
+    "options": {
+      "fileName": "app_dev.log"
+    }
+  }
+}

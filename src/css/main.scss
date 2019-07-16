@@ -1,0 +1,48 @@
+@import './normalize.scss';
+@import './skeleton.scss';
+
+body {
+  font-size: 1.6em;
+  background: #dadada;
+}
+
+h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+#app {
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 80rem;
+  background: #eeeeee;
+  border-radius: .5rem;
+
+  header.page {
+    border-bottom: .1rem solid #dadada;
+
+    ul {
+      display: flex;
+      justify-content: flex-start;
+      margin: 0;
+
+      li {
+        list-style: none;
+        padding: .5rem;
+
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  main {
+    padding: 4rem 0;
+  }
+}
