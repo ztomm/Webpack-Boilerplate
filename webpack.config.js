@@ -12,9 +12,9 @@ var isProd = process.env.NODE_ENV === 'production';
 module.exports = {
 	entry: './src/js/main.js',
 	output: {
-		path: path.resolve(__dirname, 'public/dist'),
+		path: path.resolve(__dirname, 'dist'),
 		filename: isProd ? '[name].[hash].js' : '[name].js',
-		publicPath: 'dist'
+		publicPath: '/dist/'
 	},
 	module: {
 		rules: [

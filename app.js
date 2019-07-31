@@ -59,6 +59,8 @@ app.use((req, res, next) => {
   res.locals.user = req.user;
   next();
 });
+
+app.use('/dist', express.static(path.join(__dirname, 'dist'), { maxAge: 31557600000 }));
 app.use('/', express.static(path.join(__dirname, 'public'), { maxAge: 31557600000 }));
 
 /**
